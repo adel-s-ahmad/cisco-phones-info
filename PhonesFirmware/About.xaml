@@ -1,0 +1,10 @@
+﻿<Window x:Class="PhonesFirmware.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About" Height="160" Width="350" ResizeMode="NoResize">
+    <Grid>
+        <DockPanel>
+            <TextBlock TextWrapping="WrapWithOverflow" Width="330"><LineBreak/>This Application developed to help Cisco Engineers retrieve Information about CUCM's registered IP Phones.<LineBreak/><LineBreak/>For further support email me at : <Hyperlink>adel.s.ahmad@gmail.com </Hyperlink> <LineBreak/><LineBreak/> Adel Soliman</TextBlock>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="PhonesFirmware.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Phones Info" Height="425.2" Width="525">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_Options">
+                    <MenuItem Header="_CUCM Settings" Click="CUCMOptions_Click" />
+                    <Separator />
+                    <MenuItem Header="_Exit" Click="ExitItem_Click" />
+                </MenuItem>
+                <MenuItem Header="_Help">
+                    <MenuItem Header="_About" Click="About_Click" />
+                </MenuItem>
+            </Menu>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="10" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="75" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBox IsReadOnly="True" Grid.Column="0" Grid.Row="0"  Name="txtResult" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Margin="0,0,0.4,0"></TextBox>
+                <Button Name="btnStart" Width="100" Height="30" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="btnStart_Click" >Start!</Button>
+                <Label Name="lblStatus" Grid.Row="3" Grid.Column="0" Background="#FFF8FBFF" BorderBrush="#7F969696" BorderThickness="0,1,0,0"></Label>
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>
