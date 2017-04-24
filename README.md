@@ -7,7 +7,7 @@ Retrieved Information such as phone name, description, IP address, firmware vers
 
 1. The windows user must have write permission on the application folder to enable logging
 2. Add UCM information from application's main menu choose file -> CUCM Settings
-   and fill the all the fields in this page which are all required except the Device Information field<br />
+   and fill all the fields in this page which are all required except the Device Information field<br />
     a. CUCM IP/Host: enter the IP address or host name of the UCM that you want to get its registered phones,
         if you have multiple publisher UCMs then add their IP addresses in a comma separated format<br />
     b. AXL User ID: username of application user with 'Standard AXL API Access' role<br />
