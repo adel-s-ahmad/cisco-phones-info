@@ -28,19 +28,18 @@
                 <ColumnDefinition Width="130"/>
                 <ColumnDefinition Width="210"/>
             </Grid.ColumnDefinitions>
-            <Label Grid.Row="1" Grid.Column="0">CUCM IP/Host:</Label>
+            <Label Grid.Row="1" Grid.Column="0">CUCM IP/Host *</Label>
             <TextBox Name="txtIP" Grid.Row="1" Grid.Column="1"></TextBox>
             <Label Grid.Row="3" Grid.ColumnSpan="2" Foreground="#FF9D9D9D">Comma Separated values (e.g. 10.10.10.5,hostname,10.10.10.6)</Label>
-            <Label Grid.Row="5" Grid.Column="0">AXL User ID:</Label>
+            <Label Grid.Row="5" Grid.Column="0">AXL User ID *</Label>
             <TextBox Name="txtUser" Grid.Row="5" Grid.Column="1"></TextBox>
-            <Label Grid.Row="7" Grid.Column="0">AXL Password:</Label>
+            <Label Grid.Row="7" Grid.Column="0">AXL Password *</Label>
             <TextBox Name="txtPassword" Grid.Row="7" Grid.Column="1"></TextBox>
-            <Label Grid.Row="9" Grid.Column="0">Port:</Label>
+            <Label Grid.Row="9" Grid.Column="0">Port *</Label>
             <TextBox Name="txtPort" Grid.Row="9" Grid.Column="1"></TextBox>
-            <Label Grid.Row="11" Grid.Column="0">Version:</Label>
+            <Label Grid.Row="11" Grid.Column="0">Version *</Label>
             <TextBox Name="txtVersion" Grid.Row="11" Grid.Column="1"></TextBox>
-           
-            <Label Grid.Row="13" Grid.Column="0">Device Information:</Label>
+            <Label Grid.Row="13" Grid.Column="0">Device Information</Label>
             <TextBox Name="txtDeviceInformation" Grid.Row="13" Grid.Column="1"></TextBox>
             <Label Grid.Row="15" Grid.ColumnSpan="2" Foreground="#FF9D9D9D">Fields from DeviceInformationX (e.g. versionID,modelNumber)</Label>
             <Button Name="btnSave" Height="30" Width="100" Grid.Column="1" Grid.Row="17" HorizontalAlignment="Left" Click="btnSave_Click">Save!</Button>
