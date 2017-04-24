@@ -148,7 +148,7 @@ namespace PhonesFirmware
                 int counter = 2;
                 foreach (var device in rispPhones)
                 {
-                    PhoneInfo deviceInfo = consumer.getPhoneInfo(device, Properties.Settings.Default.WebAccessUser, Properties.Settings.Default.WebAccessPassword);
+                    PhoneInfo deviceInfo = consumer.getPhoneInfo(device);
                     int progress = (int) (((float)counter / (float) count) * 100);
                     senderWorker.ReportProgress(progress, deviceInfo);
                     counter++;

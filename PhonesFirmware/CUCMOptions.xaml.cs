@@ -34,8 +34,6 @@ namespace PhonesFirmware
             txtPassword.Text = Properties.Settings.Default.Password;
             txtPort.Text = Properties.Settings.Default.Port;
             txtVersion.Text = Properties.Settings.Default.Version;
-            txtPhoneUser.Text = Properties.Settings.Default.WebAccessUser;
-            txtPhonePassword.Text = Properties.Settings.Default.WebAccessPassword;
             txtDeviceInformation.Text = Properties.Settings.Default.DeviceInfo;
         }
 
@@ -45,9 +43,7 @@ namespace PhonesFirmware
                txtUser.Text == "" ||
                txtPassword.Text == "" ||
                txtPort.Text == "" ||
-               txtVersion.Text == "" ||
-                txtPhoneUser.Text == "" ||
-                txtPassword.Text == "" )
+               txtVersion.Text == "")
             {
                 MessageBox.Show("Please, enter all the required information above to be able to access your CUCM.");
             }
@@ -58,8 +54,6 @@ namespace PhonesFirmware
                 Properties.Settings.Default.Password = txtPassword.Text;
                 Properties.Settings.Default.Port = txtPort.Text;
                 Properties.Settings.Default.Version = txtVersion.Text;
-                Properties.Settings.Default.WebAccessUser = txtPhoneUser.Text;
-                Properties.Settings.Default.WebAccessPassword = txtPhonePassword.Text;
                 Properties.Settings.Default.DeviceInfo = txtDeviceInformation.Text;
                 Properties.Settings.Default.Save();
 

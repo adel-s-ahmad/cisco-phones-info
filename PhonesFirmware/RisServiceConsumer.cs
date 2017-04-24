@@ -177,7 +177,7 @@ namespace PhonesFirmware
             }
         }
 
-        public PhoneInfo getPhoneInfo(CmDevice phone,string webAccessUser,string webAccessPassword)
+        public PhoneInfo getPhoneInfo(CmDevice phone)
         {
             PhoneInfo resultDevice = new PhoneInfo();
             try
@@ -185,7 +185,6 @@ namespace PhonesFirmware
                 resultDevice.device = phone;
                 string url = "http://"+phone.IpAddress+"/DeviceInformationX";
                 WebRequest request = WebRequest.Create(url);
-                request.Credentials = new NetworkCredential(webAccessUser, webAccessPassword);
 
                 using (WebResponse response = request.GetResponse())
                 {
@@ -208,14 +207,14 @@ namespace PhonesFirmware
             }
         }
 
-        public List<PhoneInfo> getPhonesInfo(List<CmDevice> devices,string webAccessUser, string webAccessPassword)
+        public List<PhoneInfo> getPhonesInfo(List<CmDevice> devices)
         {
             List<PhoneInfo> result = new List<PhoneInfo>();
             try
             {
                 foreach(CmDevice device in devices)
                 {
-                    PhoneInfo deviceInfo = getPhoneInfo(device, webAccessUser, webAccessPassword);
+                    PhoneInfo deviceInfo = getPhoneInfo(device);
                     if(deviceInfo!=null)
                         result.Add(deviceInfo);
                 }
